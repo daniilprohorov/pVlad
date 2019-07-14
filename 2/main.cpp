@@ -15,17 +15,6 @@ int main()
 
 
 string compare( int a, int b)
-{ 
-	if (a > b)
-	{
-		return " > ";
-	}
-	else if (a < b)
-	{
-		return " < ";
-	}
-	else
-	{
-		return " = ";
-	}
+{
+	return a == b ? " = " : a < b ? " < " : " > ";
 }
